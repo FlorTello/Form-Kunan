@@ -1,3 +1,42 @@
 *{
   font-family: 'Raleway';
 }
+.Text-Red{
+  color: red;
+}
+.Text-Bold{
+  font-weight: 400;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+label{
+  display: block;
+  line-height:40px;;
+}
+input[type="text"]{
+  border: none;
+  border-bottom: 1px solid #707274;
+  width: 80%;
+}
+.content{
+  width: 70%;
+  margin: 2% 20%;
+}
+#datos-representante{
+  position: relative;
+  /*height: 00px;*/
+  margin-bottom: 50px;
+}
+.div-left{
+  display: inline-block;
+  width: 45%;
+  position: relative;
+  /*height: 300px;*/
+}
+.div-right{
+  height: 300px;
+  display: inline-block;
+  width: 45%;
+  position: absolute;
+}
