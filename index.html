@@ -62,13 +62,156 @@
     </section>
     <section id = "datos-entidad">
       <h2>Datos de la entidad del Postulante</h2>
-      <div class="left">
+      <div class="div-left">
         <label for="">Nombre de la Entidad</label>
         <input type="text" id = "Text-nombreEntidad">
+        <label for="birth">¿Cuando comenzaron a estudiar?(dd/mm/yyyy)</label>
+        <input type="text" id = "date-entidad" name="" value="">
+        <label for="typeEntidad">Tipo de organizaciòn</label><br>
+        <select id = "tipoEntidad" class="" id = "select-tipoOrganizacion" name="" required>
+          <option value="">ONG</option>
+          <option value="">Fundaciones</option>
+          <option value="">Asociaciòn Civil </option>
+          <option value="">Empresa</option>
+          <option value="">Persona Natural</option>
+          <option value="">Otros</option>
+        </select>
+        <label for="otros">Otros</label>
+        <input type="text" id = "tipo-otros">
       </div>
-      <div class="right"></div>
+      <div class="div-right">
+        <label for="cargo">Ámbito de intervención:</label>
+        <p>¿Cuáles son las regiones, provincia y distritos donde
+           se sitúan sus operaciones a lo largo de toda la cadena del negocio?
+        </p>
+        <label for="regiones">Regiones</label>
+        <input type="checkbox" name="" value="">Amazonas <br>
+        <input type="checkbox" name="" value="">Ancash <br>
+        <input type="checkbox" name="" value="">Apurimac <br>
+        <input type="checkbox" name="" value="">Arequipa <br>
+        <input type="checkbox" name="" value="">Ayacucho <br>
+        <input type="checkbox" name="" value="">Cajamarca <br>
+        <input type="checkbox" name="" value="">Callao <br>
+        <input type="checkbox" name="" value="">Cuzco <br>
+        <input type="checkbox" name="" value="">Huancavelica <br>
+        <input type="checkbox" name="" value="">Huanuco <br>
+        <input type="checkbox" name="" value="">Ica <br>
+        <input type="checkbox" name="" value="">Junin <br>
+        <input type="checkbox" name="" value="">La Libertad <br>
+        <input type="checkbox" name="" value="">Lambayeque <br>
+        <input type="checkbox" name="" value="">Lima <br>
+        <input type="checkbox" name="" value="">Loreto <br>
+        <input type="checkbox" name="" value="">Madre de Dios <br>
+        <input type="checkbox" name="" value="">Moquegua <br>
+        <input type="checkbox" name="" value="">Pasco <br>
+        <input type="checkbox" name="" value="">Piura <br>
+        <input type="checkbox" name="" value="">Puno <br>
+        <input type="checkbox" name="" value="">San Martin <br>
+        <input type="checkbox" name="" value="">Tacna <br>
+        <input type="checkbox" name="" value="">Tumbes <br>
+        <input type="checkbox" name="" value="">Ucayali <br>
+
+        <p class="text-cursiva">
+          Indicar las provincias en las que intervienen tu emprendimiento
+           respecto a las regiones marcadas anteriormente
+        </p>
+        <label for="provincia">Provincia</label>
+        <input type="text" id = "text-provincia">
+        <p class="text-cursiva">
+          Indicar los distritos en las que intervienen tu emprendimiento respecto a las
+          provincias marcadas anteriormente de tu iniciativa
+        </p>
+        <label for="distrito">Distrito</label>
+        <input type="text" id = "text-distrito">
+      </div>
+      <div class="registros">
+        <div class="div-left">
+          <label for="registros">¿Está inscrita en Registros Públicos?</label>
+          <input type="checkbox" name="" value="">Si <br>
+          <input type="checkbox" name="" value="">No
+        </div>
+        <div class="div-right ">
+          <p>Si responde “SÍ”, llena las siguientes opciones:</p>
+          <label for="ruc">RUC</label>
+          <input type="text" id = "text-ruc">
+          <label for="">¿Cuándo se constituyeron? (dd/mm/yyyy)</label>
+          <input type="text" id = "datos-contitucion">
+        </div>
+      </div>
+    </section>
+    <section class="" id ="info-estrategica">
+      <h2>Información estratégica de la entidad postulante</h2>
+      <p class="text-cursiva">Esta información es confidencial y no sera publica en ninguna etapa del proceso de evaluación</p>
+      <label>Cual es el sector de la problematica social que busca resolver su Organizacion (Puede ser mas de una)</label>
+      <input type="checkbox">Genero <br>
+      <input type="checkbox">Educacion <br>
+      <input type="checkbox">Inclusion Social <br>
+      <input type="checkbox">Medio Ambiente <br>
+      <input type="checkbox">Salud <br>
+      <input type="checkbox">Institucionalidad <br>
+      <input type="checkbox">Turismo <br>
+      <input type="checkbox">Cultura <br>
+      <input type="checkbox">Arte <br>
+      <input type="checkbox">Diseño <br>
+      <input type="checkbox">Gastronomia <br>
+      <input type="checkbox">Valores <br>
+      <input type="checkbox">Deporte <br>
+      <input type="checkbox">Transporte <br>
+
+      <h3>Conocimiento sobre el entorno y la problematica</h3>
+        <label>Describa el principal problema social que busca resolver su organizacion</label>
+        <p>Recomendamos usar datos precisos y evidencia citando estudios, investigaciones , publicaciones, etc del problema que plantea (Maximo 80 palabras)</p>
+        <textarea name="name" rows="8" cols="80"></textarea>
+
+        <label for="">Cual es el publico objetivo directo o indirecto (Maximo 20 palabra)</label>
+        <textarea name="name" rows="8" cols="80"></textarea>
+
+        <h3>Claridad sobre la propuesta de valor</h3>
+        <label>Enuncie como su organizacion aporta a la solucion del problema y que beneficios concretos ofrece a sus publico objetivo (Maximo 60 palabras)</label>
+        <textarea name="name" rows="8" cols="80"></textarea>
+
+        <h3>Detalle como funciona su organización considerando toda la cadena del negocio</h3>
+        <p>Ejemplo</p>
+        <p>"Mi modelo consiste en convocar mujeres recicladoras entre 20 y 45 años. Las capacito en artesania elaborada a base de plasticos .Luego las contrato por 4 horas diarias de trabajo para elaborar productos . Empezamos la venta on-line de productos.
+            Cuando completamos el capital de 3 mil soles de utilidad por artesania pasamos a un contrato de tiempo completo y las recicladoras se convierten en ser artistas y empresarias. A partir de ese momento el 25% de las ventas de sus productos se
+            reinvierten en nuestra organización para sostenerla y convocar a una nueva promoción de recicladoras"</p>
+        <label>Efectividad del modelo (Maximo 100 palabras)</label>
+        <textarea name="name" rows="8" cols="80"></textarea>
+
+        <h3>Detalle la cualidad de los servicios o productos que ofrece y como destacan en el mercado</h3>
+        <p>En base al ejemplo anterior "Mi organización ofrece el servicio de capacitación a recicladoras con un metodo efectivo que las prepara en solo 3 meses. Tambien ofrezco artesania hecha a base de plastico que se distingue por usar diseños contemporaneos
+            en empaques tambien reusables"</p>
+        <label for="">Calidad de Servicio y/o Producto (Máximo 60 palabras)</label>
+        <textarea name="name" rows="8" cols="80"></textarea>
+
+        <h3>Como se mide el impacto social de su iniciativa ?</h3>
+        <p>Describa el mecanismo , los 2 principales indicadores y la medicion actual de los mismos</p>
+        <label>Impacto Social (Maximo 100 palabras)</label>
+        <textarea name="name" rows="8" cols="80"></textarea>
+
+        <h3>Exponga como su organizacion innova, que procesos y elementos de su modelo son diferentes y competivos en el mercado</h3>
+        <label>Innovacion (Maximo 100 palabras)</label>
+        <textarea name="name" rows="8" cols="80"></textarea>
     </section>
   </form>
+
+  <footer class="">
+    <div class="left content">
+    <h2>Kunan</h2>
+    <ul>
+      <li>Premio</li>
+      <li>Comunicación</li>
+      <li>Komunidad</li>
+    </ul>
+  </div>
+    <div class="right content">
+      <p>Siguenos</p><br>
+      <a href=""><img src="assets/img/Facebook.png" alt=""></a>
+      <a href=""><img src="assets/img/twitter.png" alt=""></a>
+      <a href=""><img src="assets/img/youtube.png" alt=""></a>
+      <a href=""><img src="assets/img/Instagram.png" alt=""></a>
+    </div>
+  </footer>
 
 <script type="text/javascript" src="assets/js/app.js"></script>
 </body>

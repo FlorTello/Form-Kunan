@@ -1,5 +1,7 @@
 *{
   font-family: 'Raleway';
+  margin: 0;
+  padding: 0;
 }
 .Text-Red{
   color: red;
@@ -9,22 +11,38 @@
   font-weight: bold;
   text-decoration: underline;
 }
+.text-cursiva{
+  font-style: italic;
+}
 
 label{
   display: block;
-  line-height:40px;;
+  line-height:40px;
+  color: #707274;
 }
 input[type="text"]{
   border: none;
   border-bottom: 1px solid #707274;
   width: 80%;
+
+}
+*{
+  color: #707274;
+}
+h1,h2,h3,h4,h5,h6{
+  color: black;
+  line-height:40px;
+}
+p{
+  line-height:40px;
+
 }
 .content{
   width: 70%;
-  margin: 2% 20%;
+  margin: 3% 20%;
 }
-#datos-representante{
-  position: relative;
+#datos-representante,#info-estrategica{
+  /*position: relative;*/
   /*height: 00px;*/
   margin-bottom: 50px;
 }
@@ -32,11 +50,61 @@ input[type="text"]{
   display: inline-block;
   width: 45%;
   position: relative;
-  /*height: 300px;*/
+  /*height: 100%;*/
 }
 .div-right{
-  height: 300px;
+  /*height: 300px;*/
   display: inline-block;
   width: 45%;
   position: absolute;
+}
+.registros .div-right{
+  position: relative;
+  display: none;
+}
+.registros{
+  height: 100px;
+  position: relative;
+}
+#datos-entidad{
+  position: relative;
+  /*height: 00px;*/
+  margin-bottom: 50px;
+}
+#datos-entidad .div-left{
+  position: relative;
+  height: 950px;
+}
+footer{
+  /*text-align: center;*/
+  height: 210px;
+  width: 100%;
+  display: block;
+  background: #373B47;
+  color: white;
+  padding-top: 7px;
+  bottom: 0;
+  padding: 15px 50px;
+  position: relative;
+  box-sizing: border-box;
+  line-height: 25px;
+  margin: 0;
+  display: none;
+
+}
+footer img{
+  width: 35px;
+  height: 35px;
+  background-size: 100%;
+}
+footer  li{
+  text-decoration: none;
+  list-style: none;
+}
+footer .right{
+  top: 20px;
+  width: 30%;
+  position: absolute;
+  left:  50%;
+
 }
